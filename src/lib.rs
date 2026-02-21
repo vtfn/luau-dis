@@ -1,6 +1,5 @@
 #![feature(decl_macro)]
 #![feature(str_from_raw_parts)]
-#![feature(stmt_expr_attributes)]
 mod reader;
 pub use reader::Reader;
 
