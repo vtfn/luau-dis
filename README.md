@@ -11,7 +11,6 @@ let bytecode = Bytecode::parse(...)?;
 let mut fmt = LuacFormatter::new();
 
 for p in bytecode.protos() {
-    // Decoding instructions is fully zero-copy.
     let mut dec = Decoder::new(p.instructions);
 
     while let Ok(ins) = dec.decode() {
